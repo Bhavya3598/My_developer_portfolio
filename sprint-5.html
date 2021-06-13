@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX design</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+</head>
+<body>
+    <div class="container-fluid">
+        <div id="ux">
+        </div>
+        <div id="images">
+
+        </div>
+    </div>
+    
+    <script type="text/babel">
+        class Welcome1 extends React.Component {
+        render() {
+            return <div>
+                <div class="container">
+                <div class="row mt-2" >
+                   
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+                        <img src="crud.webp" class="img-fluid" />
+                    </div>
+                    <div class="col-xs-12 text-center col-sm-12 text-center col-md-12 text-center col-lg-4 text-center col-xl-4 text-center ">
+                        <h1 class="display-6">CRUD</h1> <br/>
+                        <p>Sucessfully integrated the functionality of GET and POST methods through lambda functions to perform CRUD operations. This backend functionality was implemented by using AWS-sdk for Node.js. The backend functinality was later integrated with UI components developed from the React-App.</p>
+                        <br></br>
+                        <p><b>C-</b>Create</p>
+                        <p><b>R-</b>Read</p>
+                        <p><b>U-</b>Update</p>
+                        <p><b>D-</b>Delete</p>
+                   </div>
+                </div>
+                <hr/>
+                </div>
+                    </div>
+            ;
+        }
+    }
+    class Welcome2 extends React.Component {
+        render() {
+            return <div>
+                <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+                        <h1 class="display-3">Data reception and transmission</h1> <br/>
+                        <p>Sucessfully pushed data into the Dynamodb and retrieved it. Come across CORS error and resolved it. From the UI component, the input values wre dynamically collected to post and process the information.</p>
+                    </div>
+                </div>
+                <div class="row" >
+                    <div id="one" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 mb-2">
+                        <img src="e2.png" class="img-fluid"/>
+                    </div>
+                    <div id="one" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 mb-2">
+                        <img src="e1.png" class="img-fluid"/>
+                    </div>
+                    <div id="one" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 mb-2">
+                        <img src="a3.png" class="img-fluid"/>
+                    </div>
+                </div>
+                </div>
+                    </div>
+            ;
+        }
+    }
+    ReactDOM.render(<Welcome1/>,document.getElementById('ux'));
+
+    ReactDOM.render(<Welcome2/>,document.getElementById('images'));
+    </script>
+</body>
+</html>

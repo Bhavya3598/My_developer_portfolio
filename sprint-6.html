@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX design</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+  
+    <div class="container-fluid">
+        <div id="ux"></div>
+        <div id="images"></div>
+    </div>
+    <script type="text/babel">
+        class Welcome1 extends React.Component {
+        render() {
+            return <div>
+                
+            <div>
+                <div class="jumbotron">
+  <h1 class="display-4">The Integration</h1>
+  <p class="lead"><b><i>All the user stories that have been worked upon were integrated at this moment in time.</i></b></p>
+  <hr class="my-4"></hr>
+  <p><b><i>Micro services: The user stories were integrated by dividing them into micro services, keeping in mind the further developemnet and deployement.</i></b></p></div><p>
+  <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Integration</a></p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+    <img src="sprint6.PNG" class="img-fluid w-5" ></img>
+  </div>
+</div>
+</div>
+</div> ;
+        }
+    }
+    class Welcome2 extends React.Component {
+        render() {
+            return <div>
+                <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+                        <h1 class="display-3">Version-0</h1> <br/>
+                        <p>The whole 8 week project after working on six continous weeks, integrated the version and made all the possible attempts to avoid conflicts. </p><br/>
+                    </div>
+                </div>
+                <div class="row" >
+                    <div id="one" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 mb-2">
+                        <img src="s6-1.PNG" class="img-fluid"/>
+                    </div>
+                    <div id="one" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 mb-2">
+                        <img src="s62.PNG" class="img-fluid"/>
+                    </div>
+                    <div id="one" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 mb-2">
+                        <img src="s63.PNG" class="img-fluid"/>
+                    </div>
+                </div>
+                </div>
+                    </div>
+            
+            ;
+                
+           
+        }
+    }
+    ReactDOM.render(<Welcome1/>,document.getElementById('ux'));
+
+    ReactDOM.render(<Welcome2/>,document.getElementById('images'));
+
+
+    </script>
+</body>
+</html>
